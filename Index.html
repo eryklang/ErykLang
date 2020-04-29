@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang=pl>
+    <head>
+        <meta charset=utf-8>
+        <title>HUB</title>
+        <link rel="stylesheet" type="text/css" href="style/CSS1.css">
+        <script src="skrypt.js"></script>
+    </head>
+    <body>
+        <div class="article">
+        <div class="header"><h1>7 cudów świata</h1></div>
+        <div class="menu3">
+            Cudy <br><br><br>
+            <a href="Podstrona1.html">Kolos Rodyjski</a><br><br>
+            <a href="Podstrona2.html">Latarnia morska na Faros</a><br><br>
+            <a href="Podstrona3.html">Mauzoleum w Halikarnasie</a><br><br>
+            <a href="Podstrona4.html">Wiszące ogrody Semiramidy</a><br><br>
+            <a href="Podstrona5.html">Świątynia Artemidy w Efezie</a><br><br>
+            <a href="Podstrona6.html">Piramida Cheopsa</a><br><br>
+            <a href="Podstrona7.html">Posąg Zeusa w Olimpii</a><br><br>
+        </div>
+        <div class="tekst">7 cudów świata to lista najbardziej znanych budowli w starożytności. Była swego rodzaju przewodnikiem turystycznym dla podróżników starożytności, którzy chcieli zobaczyć najbardziej sławne i znane miejsca. Wzorowane na niej są różne inne listy (siedmiu) cudów świata. Nawiązuje do nich też pojęcie ósmego cudu świata.
+        <br>
+        <table>
+            <tr>
+                <td>To</td>
+                <td>jest</td>
+                <td>tekst</td>
+            </tr>
+            <tr>
+                <td>umieszczony</td>
+                <td>w</td>
+                <td>tabeli</td>
+            </tr>
+        </table>
+            <ol>
+                <li>abc</li>
+                <li>def</li>
+                <li>ghi</li>
+            </ol>
+            <ul>
+                <li>jkl</li>
+                <li>mno</li>
+                <li>prs</li>
+            </ul>
+            <script>
+                var galeria = new Galeria('galeria', new Array(
+                new Array("img/KolosRodyjski.jpg","img/KolosRodyjski.jpg","Kolos Rodyjski",),
+                new Array("img/LatarniaFaros.jpg","img/LatarniaFaros.jpg","Latarnia na Faros",),
+                new Array("img/Mauzoleum.jpg","img/Mauzoleum.jpg","Mauzoleum w Halikarnasie",),
+                new Array("img/WiszaceOgrody.jpg","img/WiszaceOgrody.jpg","Wiszące Ogrody Semiramidy",),
+                new Array("img/SwiatyniaArtemidy.jpg","img/SwiatyniaArtemidy.jpg","Świątynia Artemidy w Efezie",),
+                new Array("img/PiramidaCheopsa.jpg","img/PiramidaCheopsa.jpg","Piramida Cheopsa",),
+                new Array("img/ZeusOlimpia.jpg","img/ZeusOlimpia.jpg","Posąg Zeusa w Olimpii",),
+
+            ));
+            </script>
+            <br>
+            Czy podobała się strona?
+            <form action="mailto:przykladowy_adres@mail.pl" method="post" id="formularz">
+                <input type="radio" id="yes" name="typ" value="yes" checked>
+                <label for="yes">Tak</label><br> 
+                <input type="radio" id="no" name="typ" value="no">
+                <label for="no">Nie</label><br>
+                <button type="submit">Wyślij formularz</button>
+            </form>
+        </div>
+        <div class="menu3">
+            Linki zewnętrzne<br><br><br>
+            <a  href="https://pl.wikipedia.org/wiki/Kolos_Rodyjski" target="_blank">Kolos Rodyjski - więcej</a><br><br>
+            <a  href="https://pl.wikipedia.org/wiki/Latarnia_morska_na_Faros" target="_blank">Latarnia morska na Faros - więcej</a><br><br>
+            <a  href="https://pl.wikipedia.org/wiki/Mauzoleum_w_Halikarnasie" target="_blank">Mauzoleum w Halikarnasie - więcej</a><br><br>
+            <a  href="https://pl.wikipedia.org/wiki/Wisz%C4%85ce_ogrody_Semiramidy" target="_blank">Wiszące ogrody Semiramidy - więcej</a><br><br>
+            <a  href="https://pl.wikipedia.org/wiki/%C5%9Awi%C4%85tynia_Artemidy_w_Efezie" target="_blank">Świątynia Artemidy w Efezie - więcej</a><br><br>
+            <a  href="https://pl.wikipedia.org/wiki/Piramida_Cheopsa" target="_blank">Piramida Cheopsa - więcej</a><br><br>
+            <a  href="https://pl.wikipedia.org/wiki/Pos%C4%85g_Zeusa_w_Olimpii" target="_blank">Posąg Zeusa w Olimpii - więcej</a><br><br>
+        </div>
+        <div class="foot">Eryk Lang 2tb</div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $("#id-formularza").submit(function(e) {
+          e.preventDefault();
+          $.ajax({
+            url: "url_zapiera",
+            type: "post",
+            data: $("#id-formularza").serialize(),
+            success: function() {
+              alert("sukces")
+            }
+          });
+        });
+        </script>
+    </body>
+</html>
