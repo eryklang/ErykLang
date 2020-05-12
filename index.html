@@ -25,14 +25,44 @@
         <br>
         <table>
             <tr>
-                <td>To</td>
-                <td>jest</td>
-                <td>tekst</td>
+                <td></td>
+                <td>cud</td>
+                <td>przyczyna zniszczenia</td>
             </tr>
             <tr>
-                <td>umieszczony</td>
-                <td>w</td>
-                <td>tabeli</td>
+                <td>1</td>
+                <td>Kolos z Rodos</td>
+                <td>trzęsienie ziemii</td>
+            </tr>
+                 <tr>
+                <td>2</td>
+                <td>Latarnia na Faros</td>
+                <td>trzęsienie ziemii</td>
+            </tr>
+                 <tr>
+                <td>3</td>
+                <td>Mauzoleum w Hailkarnasie</td>
+                <td>trzęsienie ziemii</td>
+            </tr>
+                 <tr>
+                <td>4</td>
+                <td>Wiszące ogrody Semiramidy</td>
+                <td>trzęsienie ziemii</td>
+            </tr>
+                 <tr>
+                <td>5</td>
+                <td>Świątynia Artemidy w Efezie</td>
+                <td>Pożar</td>
+            </tr>
+                 <tr>
+                <td>6</td>
+                <td>Piarmida Cheopsa</td>
+                <td>Nadal stoi</td>
+            </tr>
+                 <tr>
+                <td>7</td>
+                <td>Posąg Zeusa w Olimpii</td>
+                <td>pożar</td>
             </tr>
         </table>
             <script>
@@ -48,14 +78,11 @@
             ));
             </script>
             <br>
-            Czy podobała się strona?
-            <form action="mailto:przykladowy_adres@mail.pl" method="post" id="formularz">
-                <input type="radio" id="yes" name="typ" value="yes" checked>
-                <label for="yes">Tak</label><br> 
-                <input type="radio" id="no" name="typ" value="no">
-                <label for="no">Nie</label><br>
-                <button type="submit">Wyślij formularz</button>
-            </form>
+            <label for="like">Czy podoba ci się strona?</label><br>
+		<input type="text" id="like" name="like" value=" "><br>
+		<label for="like2">Czy widziałeś/aś któryś z 7 cudów?</label><br>
+		<input type="text" id="like2" name="like2" value=" ">
+        <button type="button" onclick="alert('dziękuję za przesłanie formularza')">Wyślij formularz</button>
         </div>
         <div class="menu3">
             Linki zewnętrzne<br><br><br>
@@ -71,19 +98,6 @@
         </div>
         <div class="foot">Eryk Lang 2tb</div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>
-        $("#id-formularza").submit(function(e) {
-          e.preventDefault();
-          $.ajax({
-            url: "url_zapiera",
-            type: "post",
-            data: $("#id-formularza").serialize(),
-            success: function() {
-              alert("sukces")
-            }
-          });
-        });
-        </script>
+    
     </body>
 </html>
